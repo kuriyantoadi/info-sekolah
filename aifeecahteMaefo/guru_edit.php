@@ -1,4 +1,4 @@
-<?php include('../header.php') ?>
+<?php include('header.php') ?>
 
 <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
     <div class="card flex-fill w-100">
@@ -74,7 +74,14 @@
                                 Tugas Tambahan
                             </td>
                             <td>
-                                <input type="text" class="form-control" name="tugas_tambahan" value="<?= $d['tugas_tambahan'] ?>" required>
+                                <select class="form-control" name="tugas_tambahan" required>
+                                    <?php
+                                    $data = mysqli_query($koneksi, "select * from tb_tugas_tambahan");
+                                    while ($d1 = mysqli_fetch_array($data)) {
+                                    ?>
+                                        <option value="<?php echo $d1['tugas_tambahan'] ?>"><?php echo $d1['tugas_tambahan'] ?></option>
+                                    <?php } ?>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -155,6 +162,7 @@
                                 <?php if (empty($d['photo'])) { ?>
                                     <br><input type="file" name="photo" class="form-control-file" value="<?= $d['photo'] ?>" required>
                                 <?php } else { ?>
+                                    <br><input type="hidden" name="photo_ada" class="form-control-file" value="<?= $d['photo'] ?>" required>
                                     <img src="../asset/photo_guru/<?= $d['photo'] ?>" height="300" width="300">
                                     <br><a type="button" class="btn btn-danger btn-sm" href="guru_hapus_photo.php?id_guru=<?= $d['id_guru']; ?>&nama_guru=<?= $d['nama_guru']  ?>" onclick="return confirm('Anda yakin Hapus Photo dari <?php echo $d['nama_guru']; ?> ?')">Hapus</a>
                                 <?php } ?>
@@ -172,4 +180,4 @@
 
 <?php } ?>
 
-<?php include('../footer.php') ?>
+<?php include('footer.php') ?>

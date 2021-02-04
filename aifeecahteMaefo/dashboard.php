@@ -1,4 +1,4 @@
-<?php include('../header.php') ?>
+<?php include('header.php') ?>
 
 <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
 	<div class="card flex-fill w-100">
@@ -13,4 +13,4 @@
 </div>
 
 
-<?php include('../footer.php') ?>
+<?php include('footer.php') ?>

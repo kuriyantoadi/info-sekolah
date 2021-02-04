@@ -1,3 +1,11 @@
+<?php
+ob_start();
+session_start();
+if ($_SESSION['status'] != "beegerewaepemoG") {
+    header("location:login.php?pesan=belum_login");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +17,14 @@
     <meta name="author" content="AdminKit">
     <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link rel="shortcut icon" href="../img/icons/icon-48x48.png" />
 
     <title>Admin Info SMKN 1 Kragilan</title>
 
     <link href="../css/app.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> -->
+
 </head>
 
 <body>
@@ -44,8 +53,8 @@
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="guru.php">
-                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Data Siswa</span>
+                        <a class="sidebar-link" href="siswa.php">
+                            <i class="align-middle" data-feather="users"></i> <span class="align-middle">Data Siswa</span>
                         </a>
                     </li>
 
@@ -54,15 +63,15 @@
                             <i class="align-middle" data-feather="layers"></i> <span class="align-middle">Data Angkatan Siswa</span>
                         </a>
                         <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-                            
-                            <?php 
-                            include('koneksi.php');
+
+                            <?php
+                            include('../koneksi.php');
 
                             $data = mysqli_query($koneksi, "select * from tb_angkatan where kondisi='aktif'");
-                            while ($d=mysqli_fetch_array($data)) { 
+                            while ($d = mysqli_fetch_array($data)) {
                             ?>
-                               
-                             <li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Angkatan <?= $d['tahun_angkatan'] ?></a></li>
+
+                                <li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Angkatan <?= $d['tahun_angkatan'] ?></a></li>
 
                             <?php } ?>
 
@@ -89,8 +98,6 @@
                             <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
                         </a>
                     </li>
-
-
 
                     <li class="sidebar-header">
                         Tools & Components

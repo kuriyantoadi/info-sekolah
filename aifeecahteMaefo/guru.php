@@ -1,4 +1,4 @@
-<?php include('../header.php') ?>
+<?php include('header.php') ?>
 
 <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
     <div class="card flex-fill w-100">
@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-<?php include('../alert.php') ?>
+<?php include('alert.php') ?>
 
 
 <table class="table table-bordered table-hover" id="domainsTable">
@@ -34,7 +34,7 @@
                 <center>Nama Guru
             </th>
             <th>
-                <center>Wali Kelas
+                <center>Status
             </th>
             <th>
                 <center>Opsi
@@ -45,7 +45,7 @@
     include '../koneksi.php';
     // $tingkat = $_GET['tingkat'];
     $no = 1;
-    $data = mysqli_query($koneksi, "SELECT * from tb_guru, tb_kelas where tb_guru.kode_kelas=tb_kelas.kode_kelas");
+    $data = mysqli_query($koneksi, "SELECT * from tb_guru");
     while ($d = mysqli_fetch_array($data)) {
     ?>
         <tr>
@@ -59,7 +59,7 @@
                 <center><?php echo $d['nama_guru']; ?>
             </td>
             <td>
-                <center><?php echo $d['nama_kelas']; ?>
+                <center><?php echo $d['s_pegawai']; ?>
             </td>
             <td>
                 <center>
@@ -78,4 +78,4 @@
 </div>
 
 
-<?php include('../footer.php') ?>
+<?php include('footer.php') ?>

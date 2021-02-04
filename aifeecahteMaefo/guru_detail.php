@@ -1,4 +1,4 @@
-<?php include('../header.php') ?>
+<?php include('header.php') ?>
 
 <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
     <div class="card flex-fill w-100">
@@ -7,35 +7,15 @@
                 <center>Detail Guru & Pegawai
             </h3>
         </div>
+        <?php
+        include('../koneksi.php');
+        $id_guru = $_GET['id_guru'];
+        $data = mysqli_query($koneksi, "SELECT * FROM tb_guru, tb_kelas WHERE id_guru='$id_guru' AND tb_guru.kode_kelas=tb_kelas.kode_kelas ");
+        while ($d = mysqli_fetch_array($data)) {
+        ?>
         <div class="card-body px-4">
-
-            <?php
-
-            if (isset($_GET['pesan'])) {
-                if ($_GET['pesan'] == "berhasil") {
-                    echo "
-						<div class='alert alert-info alert-dismissible fade show' role='alert'>
-                            <center>Edit Data Guru <b>Berhasil</b>
-                        </div>";
-                } elseif ($_GET['pesan'] == "gagal") {
-                    echo "
-						<div class='alert alert-warning' role='alert'>
-							<center>Maaf, Edit Data Guru <b>Gagal</b>
-						</div>
-                        ";
-                }
-            }
-
-            include('../koneksi.php');
-            $id_guru = $_GET['id_guru'];
-            $data = mysqli_query($koneksi, "SELECT * FROM tb_guru, tb_kelas WHERE id_guru='$id_guru' AND tb_guru.kode_kelas=tb_kelas.kode_kelas ");
-
-            while ($d = mysqli_fetch_array($data)) {
-            ?>
-
-                <form class="" action="guru_edit_update.php" method="post" enctype="multipart/form-data">
-
                     <table class="table table-bordered">
+
                         <tr>
                             <td>
                                 Username Guru
@@ -128,12 +108,13 @@
                                 <?php } ?>
                             </td>
                         </tr>
+
                     </table>
-                </form>
         </div>
     </div>
 </div>
 
 <?php } ?>
 
-<?php include('../footer.php') ?>
+
+<?php include('footer.php') ?>

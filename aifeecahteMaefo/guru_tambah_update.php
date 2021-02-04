@@ -47,7 +47,7 @@ if ($_POST['upload']) {
 
 
 $cek_tambah = mysqli_query($koneksi, "INSERT INTO tb_guru Values('','$username','$password','$nip','$nama_guru',
-'$tugas_tambahan','$kode_kelas','$mapel','$s_pegawai','$bag_pegawai','$kondisi_peg','$nama_guru.jpg','wali')");
+'$tugas_tambahan','$kode_kelas','$mapel','$s_pegawai','$bag_pegawai','$kondisi_peg','$nama_guru.jpg','aktif')");
 
 if ($cek_tambah) {
     header("location:guru.php?pesan=tambah-berhasil");

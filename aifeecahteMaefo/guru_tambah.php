@@ -1,9 +1,11 @@
-<?php include('../header.php') ?>
+<?php include('header.php') ?>
 
 <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
     <div class="card flex-fill w-100">
         <div class="card-header">
-            <h3><center>Tambah Guru & Pegawai</h3>
+            <h3>
+                <center>Tambah Guru & Pegawai
+            </h3>
         </div>
         <div class="card-body px-4">
             <?php
@@ -50,7 +52,16 @@
                             Tugas Tambahan
                         </td>
                         <td>
-                            <input type="text" class="form-control" name="tugas_tambahan" value="" required>
+                            <select class="form-control" name="tugas_tambahan" required>
+                                <option value=""> Pilih Tugas Tambahan</option>
+                                <option value="Tidak ada tugas tambahan"> Tidak ada tugas tambahan</option>
+                                <?php
+                                $data = mysqli_query($koneksi, "select * from tb_tugas_tambahan");
+                                while ($d1 = mysqli_fetch_array($data)) {
+                                ?>
+                                    <option value="<?php echo $d1['tugas_tambahan'] ?>"><?php echo $d1['tugas_tambahan'] ?></option>
+                                <?php } ?>
+                            </select>
                         </td>
                     </tr>
                     <tr>
@@ -143,5 +154,4 @@
 </div>
 
 
-<?php include('../footer.php') ?>
-
+<?php include('footer.php') ?>

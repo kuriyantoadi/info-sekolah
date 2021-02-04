@@ -3,9 +3,27 @@
 
 
 	<script src="../js/app.js"></script>
+	<script src="../js/dataTable/jquery.js"></script>
+	<script src="../js/dataTable/jquery.dataTables.min.js"></script>
+	<script src="../js/dataTable/dataTables.bootstrap4.min.js"></script>
+
+
 
 	<!--awal js dari data lama -->
 	<script>
+		$(document).ready(function() {
+			$('#example').DataTable();
+		});
+
+		$(document).ready(function() {
+			$("#domainsTable").tablesorter({
+				sortList: [
+					[3, 1],
+					[2, 0]
+				]
+			});
+		});
+
 		function searchTable() {
 			var input;
 			var saring;
