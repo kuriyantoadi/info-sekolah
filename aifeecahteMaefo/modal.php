@@ -1,5 +1,6 @@
 <!-- Modal tampil user -->
 
+<!-- Tambah Siswa -->
 <div class="modal fade" id="tambah" role="dialog">
     <div class="modal-dialog  modal-lg">
         <div class="modal-dialog modal-lg">
@@ -88,18 +89,132 @@
 </div>
 
 
-<div class="modal fade" id="tambah_siswa" role="dialog">
-    <div class="modal-dialog  modal-lg">
-        <div class="modal-dialog modal-lg">
+<!-- Tambah Angkatan -->
+<div class="modal fade" id="tambahAngkatan" role="dialog">
+    <div class="modal-dialog  modal-md">
+        <div class="modal-dialog modal-md">
             <!-- konten modal-->
             <div class="modal-content">
                 <!-- heading modal -->
                 <div class="modal-header">
-                    <h4>Tambah Siswa</h4>
+                    <h4>Tambah Angkatan</h4>
                     <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- body modal -->
+                <form class="" action="angkatan_tambah.php" method="post">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Tahun Angkatan</label>
+                                <div class="col-sm-8">
+                                  <select class="form-control" name="tahun_angkatan" required>
+                                      <option value=""> Pilih Tahun Angkatan</option>
+                                      <?php for ($tahun=2015; $tahun < 2030 ; $tahun++) { ?>
+                                        <option value="<?= $tahun ?>"><?= $tahun; ?></option>
+                                      <?php } ?>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Kondisi</label>
+                                <div class="col-sm-8">
+                                  <select class="form-control" name="kondisi" required>
+                                      <option value=""> Pilih Kondisi</option>
+                                      <option value="Aktif">Aktif</option>
+                                      <option value="Tidak Aktif">Tidak Aktif</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <center>
+                                <input type="submit" class="btn btn-success btn" value="simpan">
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<!-- Tambah Angkatan -->
+<div class="modal fade" id="tambahKelas" role="dialog">
+    <div class="modal-dialog  modal-md">
+        <div class="modal-dialog modal-md">
+            <!-- konten modal-->
+            <div class="modal-content">
+                <!-- heading modal -->
+                <div class="modal-header">
+                    <h4>Tambah Kelas</h4>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body modal -->
+                <form class="" action="kelas_tambah.php" method="post">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Kode Kelas</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" value="" name="kode_kelas" required>
+                                </div>
+                            </div>
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Nama Kelas</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" value="" name="nama_kelas" required>
+                                </div>
+                            </div>
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Tingkat</label>
+                                <div class="col-sm-8">
+                                  <select class="form-control" name="tingkat" required>
+                                      <option value=""> Pilih Tingkat</option>
+                                      <option value="X">Tingkat X</option>
+                                      <option value="XI">Tingkat XI</option>
+                                      <option value="XI">Tingkat XII</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <center>
+                                <input type="submit" class="btn btn-success btn" value="simpan">
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tambah Tugas Tambahan -->
+<div class="modal fade" id="tambahTuta" role="dialog">
+    <div class="modal-dialog  modal-md">
+        <div class="modal-dialog modal-md">
+            <!-- konten modal-->
+            <div class="modal-content">
+                <!-- heading modal -->
+                <div class="modal-header">
+                    <h4>Tambah Tugas Tambahan</h4>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body modal -->
+                <form class="" action="tuta_tambah.php" method="post">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Tugas tambahan</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" value="" name="tugas_tambahan" required>
+                                </div>
+                            </div>
+                            <center>
+                                <input type="submit" class="btn btn-success btn" value="simpan">
+                            </center>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

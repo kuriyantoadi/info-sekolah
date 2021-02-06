@@ -7,13 +7,15 @@ session_start();
 if ($_SESSION['status']!="beegerewaepemoG") {
     header("location:login.php?pesan=belum_login");
 }
-    $id_guru = $_GET['id_guru'];
+    $id_angkatan = $_GET['id_angkatan'];
     // menghapus data dari database
-    $cek_hapus = mysqli_query($koneksi, "delete from tb_guru where id_guru='$id_guru' ");
+    $cek_hapus = mysqli_query($koneksi, "delete from tb_angkatan where id_angkatan='$id_angkatan' ");
 
     // mengalihkan halaman kembali ke index.php
     if($cek_hapus) {
-      header("location:guru.php?pesan=hapus-berhasil");
+      // echo "hapus berhasil";
+      header("location:angkatan.php?pesan=hapus-berhasil");
     }else{
-        header("location:guru.php?pesan=hapus-gagal");
+      // echo "hapus gagal";
+      header("location:angkatan.php?pesan=hapus-gagal");
     }

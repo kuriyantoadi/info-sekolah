@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="daftar-guru.php"> Data Guru & Karyawan</a>
+          <a class="nav-link" href="d_guru.php"> Data Guru & Karyawan</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -36,7 +36,8 @@
             Data Siswa
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Data Siswa 2020-2021</a>
+            <!-- <a class="dropdown-item" href="#">Seluruh Siswa</a> -->
+            <a class="dropdown-item" href="d_siswa_x.php">Data Siswa 2020-2021</a>
             <a class="dropdown-item" href="#">Data Siswa 2019-2020</a>
             <a class="dropdown-item" href="#">Data Siswa 2018-2019</a>
           </div>

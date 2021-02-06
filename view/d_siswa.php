@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12 mb-4">
             <center>
-                <h3 style="margin-top:  25px;"><b>Daftar Guru dan Karyawan</b></h3>
+                <h3 style="margin-top:  25px;"><b>Daftar Siswa</b></h3>
             </center>
         </div>
 
@@ -27,17 +27,17 @@
                 <th>
                     <center>No
                 </th>
-                <!-- <th>
-                    <center>NIP
-                </th> -->
                 <th>
-                    <center>Nama Guru
+                    <center>Nama Siswa
                 </th>
                 <th>
-                    <center>Keterangan
+                    <center>Kelas
                 </th>
                 <th>
-                    <center>Detail
+                    <center>Angkatan
+                </th>
+                <th>
+                    <center>Status
                 </th>
 
 
@@ -46,26 +46,26 @@
         <?php
         include '../koneksi.php';
         $no = 1;
-        $data = mysqli_query($koneksi, "SELECT * from tb_guru ");
+        $data = mysqli_query($koneksi, "SELECT * from tb_siswa, tb_kelas WHERE tb_siswa.kode_kelas=tb_kelas.kode_kelas ");
         while ($d = mysqli_fetch_array($data)) {
         ?>
             <tr>
                 <td>
                     <center><?php echo $no++ ?>
                 </td>
-                <!-- <td>
-                    <?php echo $d['nip']; ?>
-                </td> -->
                 <td>
-                    <?php echo $d['nama_guru']; ?>
+                    <?php echo $d['nama_siswa']; ?>
                 </td>
                 <td>
-                    <?php echo $d['s_pegawai']; ?>
+                    <?php echo $d['nama_kelas']; ?>
                 </td>
                 <td>
-                    <center>
-                        </a><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#guru<?php echo $d['id_guru'] ?>" id=".$d['id_guru'].">Detail</button>
+                    <center><?php echo $d['tahun_angkatan']; ?>
                 </td>
+                <td>
+                    <center><?php echo $d['status']; ?>
+                </td>
+
             </tr>
 
             <?php include('modal.php'); ?>

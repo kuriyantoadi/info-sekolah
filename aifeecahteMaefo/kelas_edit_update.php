@@ -6,20 +6,16 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
 
 include '../koneksi.php';
 
-$id_siswa = $_POST['id_siswa'];
-$username = $_POST['username'];
-$nama_siswa = $_POST['nama_siswa'];
+$id_kelas = $_POST['id_kelas'];
 $kode_kelas = $_POST['kode_kelas'];
-$tahun_angkatan = $_POST['tahun_angkatan'];
-$status = $_POST['status'];
+$nama_kelas = $_POST['nama_kelas'];
+$tingkat = $_POST['tingkat'];
 
-$cek_edit = mysqli_query($koneksi, "UPDATE tb_siswa SET
-        username='$username',
-        nama_siswa='$nama_siswa',
+$cek_edit = mysqli_query($koneksi, "UPDATE tb_kelas SET
         kode_kelas='$kode_kelas',
-        tahun_angkatan='$tahun_angkatan',
-        status='$status'
-        where id_siswa='$id_siswa'
+        nama_kelas='$nama_kelas',
+        tingkat='$tingkat'
+        where id_kelas='$id_kelas'
         ");
 
 

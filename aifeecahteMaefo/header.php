@@ -67,7 +67,7 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
                             <?php
                             include('../koneksi.php');
 
-                            $data = mysqli_query($koneksi, "select * from tb_angkatan where kondisi='aktif'");
+                            $data = mysqli_query($koneksi, "SELECT * from tb_angkatan where kondisi='Aktif' ORDER BY tahun_angkatan DESC");
                             while ($d = mysqli_fetch_array($data)) {
                             ?>
 
@@ -78,13 +78,15 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
                         </ul>
                     </li>
 
-
-
-
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-settings.html">
-                            <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
+                        <a data-target="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+                            <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Atur Data</span>
                         </a>
+                        <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="angkatan.php">Angkatan</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="kelas.php">Kelas</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="tuta.php">Tugas Tambahan</a></li>
+                        </ul>
                     </li>
 
                     <li class="sidebar-item">
