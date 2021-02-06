@@ -32,7 +32,7 @@ if ($cek > 0) {
     if ($login['status']=="beegerewaepemoG") {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "beegerewaepemoG";
-        echo "cek";
+        // echo "cek";
         header("location:../aifeecahteMaefo/dashboard.php?username=$username");
     } else {
         // echo "salah1";
