@@ -17,8 +17,8 @@ $cek_edit = mysqli_query($koneksi, "UPDATE tb_angkatan SET
         ");
 
 
-// if ($cek_edit) {
-//     header("location:siswa_edit.php?id_siswa=$id_siswa&pesan=edit-berhasil");
-// } else {
-//     header("location:siswa_edit.php?id_siswa=$id_siswa&pesan=edit-gagal");
-// }
+if ($cek_edit) {
+    header("location:angkatan_edit.php?id_angkatan=$id_angkatan&pesan=edit-berhasil");
+} else {
+    header("location:angkatan_edit.php?id_angkatan=$id_angkatan&pesan=edit-gagal");
+}

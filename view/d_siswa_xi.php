@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12 mb-4">
             <center>
-                <h3 style="margin-top:  25px;"><b>Daftar Guru dan Karyawan</b></h3>
+                <h3 style="margin-top:  25px;"><b>Daftar Siswa Kelas XI</b></h3>
             </center>
         </div>
 
@@ -46,7 +46,7 @@
         <?php
         include '../koneksi.php';
         $no = 1;
-        $data = mysqli_query($koneksi, "SELECT nama_siswa, nama_kelas, status, tahun_angkatan from tb_siswa, tb_kelas WHERE tb_siswa.kode_kelas=tb_kelas.kode_kelas ");
+        $data = mysqli_query($koneksi, "SELECT nama_siswa, nama_kelas, status, tahun_angkatan from tb_siswa, tb_kelas WHERE tb_siswa.kode_kelas=tb_kelas.kode_kelas AND tingkat='11'");
         while ($d = mysqli_fetch_array($data)) {
         ?>
             <tr>

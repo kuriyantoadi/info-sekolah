@@ -46,7 +46,7 @@
         <?php
         include '../koneksi.php';
         $no = 1;
-        $data = mysqli_query($koneksi, "SELECT nama_siswa, nama_kelas, status, tahun_angkatan from tb_siswa, tb_kelas WHERE tb_siswa.kode_kelas=tb_kelas.kode_kelas ");
+        $data = mysqli_query($koneksi, "SELECT nama_siswa, nama_kelas, status, tahun_angkatan from tb_siswa, tb_kelas WHERE tb_siswa.kode_kelas=tb_kelas.kode_kelas AND tingkat='12'");
         while ($d = mysqli_fetch_array($data)) {
         ?>
             <tr>

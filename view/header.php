@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/jquery-latest.js"></script>
-  <link href='#' rel='shortcut icon' type='image/x-icon' />
+  <link rel="shortcut icon" href="../img/icons/icon-48x48.png" />
 
 </head>
 
@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="d_guru.php"> Data Guru & Karyawan</a>
+          <a class="nav-link" href="index.php"> Data Guru & Karyawan</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -38,8 +38,8 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <!-- <a class="dropdown-item" href="#">Seluruh Siswa</a> -->
             <a class="dropdown-item" href="d_siswa_x.php">Data Siswa 2020-2021</a>
-            <a class="dropdown-item" href="#">Data Siswa 2019-2020</a>
-            <a class="dropdown-item" href="#">Data Siswa 2018-2019</a>
+            <a class="dropdown-item" href="d_siswa_xi.php">Data Siswa 2019-2020</a>
+            <a class="dropdown-item" href="d_siswa_xii.php">Data Siswa 2018-2019</a>
           </div>
         </li>
       </ul>
