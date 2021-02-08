@@ -78,14 +78,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="row">
                             <label class="col-sm-3 control-label font-weight-bold">Photo :</label>
                             <div class="col-sm-8">
                                 <img src="../asset/photo_guru/<?= $d['photo'] ?>" height="300" width="270">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
