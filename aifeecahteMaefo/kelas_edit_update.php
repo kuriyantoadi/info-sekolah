@@ -20,7 +20,7 @@ $cek_edit = mysqli_query($koneksi, "UPDATE tb_kelas SET
 
 
 if ($cek_edit) {
-    header("location:siswa_edit.php?id_siswa=$id_siswa&pesan=edit-berhasil");
+    header("location:kelas_edit.php?id_kelas=$id_kelas&pesan=edit-berhasil");
 } else {
-    header("location:siswa_edit.php?id_siswa=$id_siswa&pesan=edit-gagal");
+    header("location:kelas_edit.php?id_kelas=$id_kelas&pesan=edit-gagal");
 }

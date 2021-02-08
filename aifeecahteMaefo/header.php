@@ -83,6 +83,7 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
                             <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Atur Data</span>
                         </a>
                         <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                            <li class="sidebar-item"><a class="sidebar-link" href="mapel.php">Mata Pelajaran</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="angkatan.php">Angkatan</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="kelas.php">Kelas</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="tuta.php">Tugas Tambahan</a></li>
@@ -101,7 +102,7 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
                         </a>
                     </li>
 
-                    
+
 
             </div>
         </nav>

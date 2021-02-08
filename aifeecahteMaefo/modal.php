@@ -219,3 +219,36 @@
         </div>
     </div>
 </div>
+
+
+<!-- Tambah Mata Pelajaran -->
+<div class="modal fade" id="tambahMapel" role="dialog">
+    <div class="modal-dialog  modal-md">
+        <div class="modal-dialog modal-md">
+            <!-- konten modal-->
+            <div class="modal-content">
+                <!-- heading modal -->
+                <div class="modal-header">
+                    <h4>Tambah Mata Pelajaran</h4>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body modal -->
+                <form class="" action="mapel_tambah.php" method="post">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Mata Pelajaran</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" value="" name="nama_mapel" required>
+                                </div>
+                            </div>
+                            <center>
+                                <input type="submit" class="btn btn-success btn" value="simpan">
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
