@@ -17,8 +17,8 @@ $cek_edit = mysqli_query($koneksi, "UPDATE tb_mapel SET
 
 if ($cek_edit) {
   // echo "berhasil";
-    header("location:mapel_edit.php?id_mapel=$id_mapel&pesan=edit-berhasil");
+    header("location:mapel.php?&pesan=edit-berhasil");
 } else {
   // echo "gagal";
-    header("location:mapel_edit.php?id_mapel=$id_mapel&pesan=edit-gagal");
+    header("location:mapel.php?pesan=edit-gagal");
 }
