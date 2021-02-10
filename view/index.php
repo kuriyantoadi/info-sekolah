@@ -46,7 +46,7 @@
         <?php
         include '../koneksi.php';
         $no = 1;
-        $data = mysqli_query($koneksi, "SELECT * from tb_guru ");
+        $data = mysqli_query($koneksi, "SELECT * from tb_guru ORDER BY s_pegawai DESC");
         while ($d = mysqli_fetch_array($data)) {
         ?>
             <tr>
