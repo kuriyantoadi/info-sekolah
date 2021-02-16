@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12 mb-4">
             <center>
-                <h3 style="margin-top:  25px;"><b>Daftar Guru dan Karyawan</b></h3>
+                <h3 style="margin-top:  25px;"><b>Daftar Guru dan Tata Usaha</b></h3>
             </center>
         </div>
 
@@ -31,10 +31,13 @@
                     <center>NIP
                 </th> -->
                 <th>
-                    <center>Nama Guru
+                    <center>Nama Guru dan Tata Usaha
                 </th>
                 <th>
-                    <center>Keterangan
+                  <center>Bagian
+                </th>
+                <th>
+                    <center>Status Pegawai
                 </th>
                 <th>
                     <center>Detail
@@ -58,6 +61,9 @@
                 </td> -->
                 <td>
                     <?php echo $d['nama_guru']; ?>
+                </td>
+                <td>
+                  <?php echo $d['bag_pegawai'] ?>
                 </td>
                 <td>
                     <?php echo $d['s_pegawai']; ?>
