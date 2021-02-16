@@ -41,7 +41,7 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="index.php">
+                        <a class="sidebar-link" href="dashboard.php">
                             <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
                         </a>
                     </li>
@@ -71,7 +71,7 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
                             while ($d = mysqli_fetch_array($data)) {
                             ?>
 
-                                <li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Angkatan <?= $d['tahun_angkatan'] ?></a></li>
+                                <li class="sidebar-item"><a class="sidebar-link" href="angkt_siswa.php?tahun_angkatan=<?= $d['tahun_angkatan'] ?>">Angkatan <?= $d['tahun_angkatan'] ?></a></li>
 
                             <?php } ?>
 

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12 mb-4">
             <center>
-                <h3 style="margin-top:  25px;"><b>Daftar Guru dan Karyawan</b></h3>
+                <h3 style="margin-top:  25px;"><b>Daftar Siswa Kelas XII</b></h3>
             </center>
         </div>
 

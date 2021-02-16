@@ -15,8 +15,7 @@ include('header.php');
                 <?php include('alert.php') ?>
 
                 <div class="col-sm">
-                    </a><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#tambah">Tambah Siswa</button></a>
-                  <a type="button" href="siswa_lap.php" class="btn btn-success btn-sm" >Download Siswa</a>
+                    </a><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#tambah">Tambah Siswa</button>
                 </div>
                 <div class="col-sm">
                 </div>
@@ -54,9 +53,10 @@ include('header.php');
                     </tr>
                 </thead>
                 <?php
+                $tahun_angkatan = $_GET['tahun_angkatan'];
                 include '../koneksi.php';
                 $no = 1;
-                $data = mysqli_query($koneksi, "SELECT id_siswa, nisn, nama_siswa, tahun_angkatan, nama_kelas from tb_siswa, tb_kelas where tb_siswa.kode_kelas=tb_kelas.kode_kelas");
+                $data = mysqli_query($koneksi, "SELECT id_siswa, nisn, nama_siswa, tahun_angkatan, nama_kelas from tb_siswa, tb_kelas where tb_siswa.kode_kelas=tb_kelas.kode_kelas AND tahun_angkatan='$tahun_angkatan'");
                 while ($d = mysqli_fetch_array($data)) {
                 ?>
                     <tr>

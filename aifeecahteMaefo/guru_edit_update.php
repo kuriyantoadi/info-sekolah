@@ -69,7 +69,7 @@ if (empty($photo_ada)) {
 
 
 } else {
-    echo "photo ada";
+    // echo "photo ada";
 
     // jika photo tidak ada
     $cek_edit = mysqli_query($koneksi, "UPDATE tb_guru SET
