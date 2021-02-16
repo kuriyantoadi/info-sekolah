@@ -33,7 +33,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <!-- <a class="dropdown-item" href="#">Seluruh Siswa</a> -->
-            <a class="dropdown-item" href="kepsek.php">Kepala Sekolah </a>
+            <a class="dropdown-item" href="#">Kepala Sekolah </a>
             <a class="dropdown-item" href="wakasek.php">Wakil Kepala Sekolah</a>
             <a class="dropdown-item" href="guru.php">Guru</a>
             <a class="dropdown-item" href="tu.php">Tata Usaha</a>
