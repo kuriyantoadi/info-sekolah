@@ -137,8 +137,11 @@
                             <td>
                                 <select class="form-control" name="bag_pegawai" required>
                                     <option value="<?= $d['bag_pegawai'] ?>"> Pilihan Awal = <?php echo $d['bag_pegawai'] ?></option>
+                                    <option value=""> Pilih Bagian Pegawai</option>
+                                    <option value="Kepala Sekolah"> Kepala Sekolah </option>
+                                    <option value="Wakil Kepala Sekolah"> Wakil Kepala Sekolah </option>
                                     <option value="Guru"> Guru </option>
-                                    <option value="Pegawai/TU"> Pegawai/TU</option>
+                                    <option value="Tata Usaha"> Tata Usaha</option>
                                 </select>
                             </td>
                         </tr>

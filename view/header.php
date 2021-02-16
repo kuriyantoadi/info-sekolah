@@ -27,8 +27,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.php"> Data Guru & Karyawan</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Profil
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <!-- <a class="dropdown-item" href="#">Seluruh Siswa</a> -->
+            <a class="dropdown-item" href="kepsek.php">Kepala Sekolah </a>
+            <a class="dropdown-item" href="wakasek.php">Wakil Kepala Sekolah</a>
+            <a class="dropdown-item" href="guru.php">Guru</a>
+            <a class="dropdown-item" href="tu.php">Tata Usaha</a>
+          </div>
         </li>
 
         <li class="nav-item dropdown">
