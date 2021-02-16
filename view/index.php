@@ -49,7 +49,7 @@
         <?php
         include '../koneksi.php';
         $no = 1;
-        $data = mysqli_query($koneksi, "SELECT * from tb_guru ORDER BY s_pegawai ASC AND ORDER BY nama_guru ASC");
+        $data = mysqli_query($koneksi, "SELECT * from tb_guru ORDER BY s_pegawai, nama_guru ASC");
         while ($d = mysqli_fetch_array($data)) {
         ?>
             <tr>
