@@ -75,6 +75,7 @@
                             </td>
                             <td>
                                 <select class="form-control" name="tugas_tambahan" required>
+                                  <option value="<?= $d['tugas_tambahan'] ?>"> Pilihan Awal = <?php echo $d['tugas_tambahan'] ?></option>
                                     <?php
                                     $data = mysqli_query($koneksi, "select * from tb_tugas_tambahan");
                                     while ($d1 = mysqli_fetch_array($data)) {
