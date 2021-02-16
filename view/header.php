@@ -18,7 +18,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="https://smkn1kragilan.sch.id">
       <img src="../asset/logo-smk.png" width="51" height="46.85" alt="">
     </a>
     <a class="navbar-brand" href="index.php">Informasi Sekolah</a>
