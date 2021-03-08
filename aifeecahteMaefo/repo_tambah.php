@@ -21,7 +21,7 @@ if ($_POST['upload']) {
     $ukuran    = $_FILES['file_repo']['size'];
     $file_tmp = $_FILES['file_repo']['tmp_name'];
     if (in_array($ekstensi, $ekstensi_diperbolehkan) === true) {
-        if ($ukuran < 1000000) {
+        if ($ukuran < 5000000) {
             move_uploaded_file($file_tmp, '../asset/repository_sk/'.$nama_repo.'.pdf');
         } else {
             echo 'file_repo';
