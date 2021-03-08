@@ -17,6 +17,9 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
     <meta name="author" content="AdminKit">
     <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
+    <!-- link icon -->
+    <!-- https://feathericons.com/ -->
+
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link rel="shortcut icon" href="../img/icons/icon-48x48.png" />
 
@@ -91,10 +94,17 @@ if ($_SESSION['status'] != "beegerewaepemoG") {
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-invoice.html">
+                        <a class="sidebar-link" href="#">
                             <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Bagi Raport</span>
                         </a>
                     </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="repo.php">
+                            <i class="align-middle" data-feather="folder-plus"></i> <span class="align-middle">Repository</span>
+                        </a>
+                    </li>
+
 
                     <li class="sidebar-item">
                         <a class="sidebar-link" href="pages-blank.html">

@@ -252,3 +252,43 @@
         </div>
     </div>
 </div>
+
+
+
+<!-- Tambah File Repo -->
+<div class="modal fade" id="tambahFileRepo" role="dialog">
+    <div class="modal-dialog  modal-md">
+        <div class="modal-dialog modal-md">
+            <!-- konten modal-->
+            <div class="modal-content">
+                <!-- heading modal -->
+                <div class="modal-header">
+                    <h4>Tambah File Repository</h4>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- body modal -->
+                <form class="" action="repo_tambah.php" method="post" enctype="multipart/form-data">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Nama File</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" value="" name="nama_repo" required>
+                                </div>
+                            </div>
+                            <div class="mb-4 row">
+                                <label class="col-form-label col-sm-3 text-sm-right">Upload File</label>
+                                <div class="col-sm-8">
+                                  <input type="file" name="file_repo" accept="application/pdf" class="form-control-file" id="upload" required>
+                                </div>
+                            </div>
+                            <center>
+                                <input type="submit" class="btn btn-success btn" value="upload" name="upload">
+                            </center>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
