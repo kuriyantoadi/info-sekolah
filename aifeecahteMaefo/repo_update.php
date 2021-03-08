@@ -17,7 +17,7 @@ $cek_edit = mysqli_query($koneksi, "UPDATE tb_repo SET
         ");
 
 $fileAwal = "../asset/repository_sk/$nama_repo_lama.pdf";
-echo $fileAwal;
+// echo $fileAwal;
 
 $fileBaru = "../asset/repository_sk/$nama_repo.pdf";
 
