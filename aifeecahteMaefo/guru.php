@@ -45,7 +45,7 @@
     include '../koneksi.php';
     // $tingkat = $_GET['tingkat'];
     $no = 1;
-    $data = mysqli_query($koneksi, "SELECT * from tb_guru");
+    $data = mysqli_query($koneksi, "SELECT * from tb_guru ORDER BY s_pegawai ASC");
     while ($d = mysqli_fetch_array($data)) {
     ?>
         <tr>
