@@ -45,7 +45,7 @@
     include '../koneksi.php';
     // $tingkat = $_GET['tingkat'];
     $no = 1;
-    $data = mysqli_query($koneksi, "SELECT * from tb_repo");
+    $data = mysqli_query($koneksi, "SELECT * from tb_repo order by nama_repo");
     while ($d = mysqli_fetch_array($data)) {
     ?>
         <tr>
