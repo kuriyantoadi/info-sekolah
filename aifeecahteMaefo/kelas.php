@@ -6,8 +6,7 @@ include('header.php');
 <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
     <div class="card flex-fill w-100">
         <div class="card-header">
-            <h3>
-                <center>Data Kelas</h4>
+            <h3><center>Data Kelas</h3>
         </div>
         <div class="card-body px-4">
             <div class="row mb-3">
