@@ -56,6 +56,9 @@
           </div>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="alumni.php">Data Almuni</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="repo.php">Repository</a>
         </li>
       </ul>
