@@ -44,7 +44,8 @@
                                   <option value="<?= $d['tingkat'] ?>"> Pilihan Awal = <?= $d['tingkat']; ?></option>
                                   <option value="X">Tingkat X</option>
                                   <option value="XI">Tingkat XI</option>
-                                  <option value="XI">Tingkat XII</option>
+                                  <option value="XII">Tingkat XII</option>
+                                  <option value="Alumni">Alumni</option>
                               </select>
                             </td>
                         </tr>
