@@ -171,7 +171,9 @@
                                       <option value=""> Pilih Tingkat</option>
                                       <option value="X">Tingkat X</option>
                                       <option value="XI">Tingkat XI</option>
-                                      <option value="XI">Tingkat XII</option>
+                                      <option value="XII">Tingkat XII</option>
+                                      <option value="Almuni">Almuni</option>
+
                                   </select>
                                 </div>
                             </div>
