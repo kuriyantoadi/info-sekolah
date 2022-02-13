@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12 mb-4">
             <center>
-                <h3 style="margin-top:  25px;"><b>Daftar Siswa Kelas X</b></h3>
+                <h3 style="margin-top:  25px;"><b>Daftar Siswa</b></h3>
             </center>
         </div>
 
