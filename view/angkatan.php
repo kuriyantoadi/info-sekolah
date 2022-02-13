@@ -47,7 +47,7 @@
         include '../koneksi.php';
         $no = 1;
         $angkatan = $_GET['angkatan'];
-        $data = mysqli_query($koneksi, "SELECT * from tb_siswa WHERE angkatan=$angkatan ");
+        $data = mysqli_query($koneksi, "SELECT * from tb_siswa WHERE tahun_angkatan=$angkatan ");
         while ($d = mysqli_fetch_array($data)) {
         ?>
             <tr>
