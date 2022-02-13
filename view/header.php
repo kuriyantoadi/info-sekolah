@@ -50,9 +50,18 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <!-- <a class="dropdown-item" href="#">Seluruh Siswa</a> -->
-            <a class="dropdown-item" href="d_siswa_x.php">Angkatan 2020</a>
+            <?php
+            include('../koneksi.php');
+
+            $data = mysqli_query($koneksi, "SELECT * from tb_angkatan where kondisi='Aktif' ORDER BY tahun_angkatan DESC");
+            while ($d = mysqli_fetch_array($data)) {
+            ?>
+              <a class="dropdown-item" href="angkatan.php?angkatan=<?= $d['tahun_angkatan'] ?>"> <?= $d['tahun_angkatan'] ?></a>
+            <?php } ?>
+
+            <!-- <a class="dropdown-item" href="d_siswa_x.php">Angkatan 2020</a>
             <a class="dropdown-item" href="d_siswa_xi.php">Angkatan 2019</a>
-            <a class="dropdown-item" href="d_siswa_xii.php">Angkatan 2018</a>
+            <a class="dropdown-item" href="d_siswa_xii.php">Angkatan 2018</a> -->
           </div>
         </li>
         <li class="nav-item">

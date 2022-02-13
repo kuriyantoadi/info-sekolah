@@ -23,5 +23,5 @@ if ($cek_tambah) {
     header("location:siswa.php?pesan=tambah-berhasil");
 } else {
     echo "tambah gagal";
-    header("location:siswa.php?pesan=tambah-gagal");
+    // header("location:siswa.php?pesan=tambah-gagal");
 }
