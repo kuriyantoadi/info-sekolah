@@ -64,9 +64,9 @@
             <a class="dropdown-item" href="d_siswa_xii.php">Angkatan 2018</a> -->
           </div>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="alumni.php">Data Almuni</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="repo.php">Repository</a>
         </li>
