@@ -17,7 +17,7 @@
         <div class="col-sm">
         </div>
         <div class="col-sm">
-            Cari Guru : <input type='text' class="form-control" id='input' onkeyup='searchTable()'>
+            Cari Siswa : <input type='text' class="form-control" id='input' onkeyup='searchTable()'>
         </div>
     </div>
 
